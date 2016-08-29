@@ -1,0 +1,47 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+@keyframes pulsate {
+   0% {transform: scale(0.1, 0.1); opacity: 0.0;
+           box-shadow: 0 0 0 1rem rgba(255,100,100,.1),0 0 0 2rem rgba(255,100,100,.15),0 0 0 3rem rgba(255,100,100,.2);
+   }
+   50% {opacity: 1.0;
+           box-shadow: 0 0 0 1.25rem rgba(255,100,.1),0 0 0 2.75rem rgba(255,100,100,.1),0 0 0 4rem rgba(255,100,100,0);
+   }
+   75% {
+   box-shadow: 0 0 0 1.5rem rgba(255,100,100,.1),0 0 0 3rem rgba(255,100,100,0),0 0 0 5rem rgba(255,100,100,0);}
+
+   100% {transform: scale(1.2, 1.2); opacity: 0.0;
+               box-shadow: 0 0 0 1.75rem rgba(255,100,100,0),0 0 0 3.75rem rgba(255,100,100,0),0 0 0 6rem rgba(255,100,100,0);
+   }
+}
+
+.home-container {
+  box-sizing: border-box;
+ background:  url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqoQ7MzOrwUQpa2M-4FzcRuV5RXMDQ5o6TYVhSj8MnfqwzLJMgbQ) no-repeat center top;
+ background-size: cover;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ color: white;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ font-family: "roboto" sans-serif;
+ font size:18px;
+ padding: 170px;
+
+
+}
+
+.enter-button {
+  animation:pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  display: block;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.arrival-button {
+  width:30vh;
+  height: 30vh;
+}

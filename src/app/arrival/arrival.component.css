@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+.page-container {
+
+	flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+	height: 100vh;
+  width:100%;
+  background-color: #000;*/
+
+}
+
+
+
+h1 {
+  text-align: center;
+  font size:65px;
+  color: #fff ;
+}
+
+form {
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+	height: auto;
+	background-color: #000;
+  padding-bottom: 70px;
+  margin-top: 15px;
+  margin-bottom: 2rem;
+
+}
+
+input {
+  width: 100%;
+  margin-bottom: 2rem;
+  color: red;
+  box-sizing: border-box;
+  font-size: 25px;
+  background: 0 0;
+  padding-left: 10px;
+
+
+}
+input::-webkit-input-placeholder{
+	color:red;
+}
+select{
+	color: #000;
+	-webkit-appearance: none;
+	border-radius: 1.5rem;
+  background-color: #fff;
+
+}
+
+
+button {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  background: #000;
+	color: white;
+}
+
+button:disabled {
+	color: grey;
+}

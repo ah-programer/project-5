@@ -1,0 +1,20 @@
+<div class="page-container ">
+
+  <h1>Register</h1> {{ NO_OCCUPATION_SELECTED }}
+  <form (ngSubmit)="onSubmit()" name="arrivalForm" #arrivalForm="ngForm">
+
+    <fieldset>
+
+      <input [(ngModel)]="colonist.name" type="text" name="name" placeholder="name" required>
+      <input [(ngModel)]="colonist.age" type="text" name="age" placeholder="age" required>
+  <select name="user_job" [(ngModel)]="colonist.job_id" name="job_id" required>
+        <option value="(none)" selected>Select Occupation </option>
+        <option *ngFor="let o of occupations" [value]="o.id">{{o.name}} </option>
+      </select>
+</fieldset>
+
+<button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit"> Check in </button>
+
+
+</form>
+</div>

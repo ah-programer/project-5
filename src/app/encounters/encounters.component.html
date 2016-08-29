@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>mars</title>
+
+  </head>
+  <body>
+
+
+    <div class=" Recent-container">
+
+
+    <header class="recent-title">
+      <h3>Recent Encounters
+  <br><p>See an Alien? Report it</p>
+  </h3>
+    </header>
+
+    <article>
+              <ul>
+                  <li *ngFor="let o of encounters">
+                    <span class="date">{{o.date}}</span>
+                    <span class="type"> - {{o.atype}}</span>
+                    <span class="action"><span class="taken">Action Taken:</span>
+                    {{o.action}}</span>
+                  </li>
+               </ul>
+          </article>
+   <footer>
+        <button [routerLink]="['/report']">Report Encounter</button>
+     </footer>
+  </div>
+  </body>
+</html>
